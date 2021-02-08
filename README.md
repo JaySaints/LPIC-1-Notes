@@ -1,2 +1,2 @@
-# mongo-db [ Create_Read_Update_Delete ]
-- Base code MongoDB
+> # Preparação para Certificação LPIC-1
+> - Anotações
