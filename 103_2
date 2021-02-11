@@ -1,0 +1,10 @@
+##### Autor: Pablo J. Santos - [@_jaysaints](#code)
+### SubTópico 103.2: Aplicando Filtros de Textos e Arquivos
+### Peso: 2
+
+## $ cat - Concatena ARQUIVO(S) para a saída padrão.
+.. Se o ARQUIVO não for expecificado após o comando _cat_, lê a entrada padrão.
+> _Opções:_
+> - -n, Mostra todas as linhas do arquivo numerada.
+> - -b, Numera apenas as linhas **NÃO** brancas.
+> - -s, Suprime duas linhas branco ou mais em apenas uma linha em branco.
