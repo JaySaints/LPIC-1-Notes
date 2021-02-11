@@ -3,7 +3,7 @@
 
 ## Tópico 103: Comandos GNU & UNIX
 
-> ### 103.1 - trabalhando na linha de comando - [103\_1.md](https://github.com/JaySaints/LPIC-1-Notes/blob/main/103_1.md)
+> ### [103.1](https://github.com/JaySaints/LPIC-1-Notes/blob/main/103_1.md) - Trabalhando na Linha de Comando 
 > ***Conteudo:***
 >	- bash
 >	- echo
