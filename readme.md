@@ -13,12 +13,12 @@
 >	- set
 >	- unset
 >	- type
->	- which
+> - which
 > - whatis
 >	- man
 >	- uname
 >	- history
->	- .bash\_history	
+>	- \.bash\_history	
 >	- Quotin
 >	- alias
 >	- Comandos sequêncial
