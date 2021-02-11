@@ -1,4 +1,4 @@
-> # Preparação para Certificação LPIC-1
+# Preparação para Certificação LPIC-1
 
 
 ## Tópico 103: Comandos GNU & UNIX
