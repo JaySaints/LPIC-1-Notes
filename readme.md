@@ -14,8 +14,9 @@
 >	- unset
 >	- type
 >	- which
+> - whatis
 >	- man
-> 	- uname
+>	- uname
 >	- history
 >	- .bash\_history	
 >	- Quotin
