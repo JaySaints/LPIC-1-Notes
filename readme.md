@@ -1,8 +1,8 @@
 ##### Autor: Pablo J. Santos - @_jaysaints
 
-# Preparação para Certificação LPIC-1 
-## Curso online Udemy Preparatório para Certificação Linux LPIC-1 | Atualizado V5 
-##### Criado por Ricardo Prudenciato. [link do curso](https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/)
+> Preparação para Certificação LPIC-1 
+> Curso online Udemy Preparatório para Certificação Linux LPIC-1 | Atualizado V5 
+> Criado por Ricardo Prudenciato. [link do curso](https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/)
 
 ## Tópico 103: Comandos GNU & UNIX
 
@@ -22,5 +22,5 @@
 > - history
 > - .bash\_history
 > - Quotin
->	- alias
->	- Comandos sequêncial
+> - alias
+> - Comandos sequêncial
