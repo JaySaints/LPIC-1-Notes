@@ -19,8 +19,8 @@
 >	- which
 >	- man
 > - uname
->	- history
->	- .bash\_history	
->	- Quotin
+> - history
+> - .bash\_history
+> - Quotin
 >	- alias
 >	- Comandos sequêncial
