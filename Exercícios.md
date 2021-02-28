@@ -1,7 +1,9 @@
 6. 
->> $ mkdir -p LPI1/Aulas 
->> $ mkdir Exercicios
->> $ mkdir Exemplos
+> $ mkdir -p LPI1/Aulas
+>  
+> $ mkdir Exercicios
+> 
+> $ mkdir Exemplos
 
 7. 
 > $ cp -pr /etc/network ~/user/LPI1/Exercicios/Network
