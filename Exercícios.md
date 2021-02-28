@@ -1,5 +1,5 @@
 6. 
-> $ mkdir -p LPI1/Aulas
+> $ mkdir -p LPI1/Aulas <
 > $ mkdir Exercicios
 > $ mkdir Exemplos
 
