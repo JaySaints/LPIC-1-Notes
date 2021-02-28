@@ -8,7 +8,7 @@
 
 8.
 > $ mkdir ~/user/LPI1/Exercicios/Config
-> $ cp -pr /etc/*.conf ~/user/LPI1/Exercicios/Config
+>> $ cp -pr /etc/*.conf ~/user/LPI1/Exercicios/Config
 
 9.
 > $ tar -zcvpf arquivos-cron.tgz /etc/*cron*
