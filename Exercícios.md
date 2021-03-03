@@ -87,15 +87,15 @@ drwx------ 4 lightdm lightdm 4096 Mar 27 16:41 /var/lib/lightdm/.config
 
 **13. Explique as diferenças entre os seguintes redirecionadores de entradas e saídas**
 
-- > arquivo
+- \> arquivo
 
 - < arquivo 
 
-- >> arquivo
+- \>\> arquivo
 
-- 2> arquivo
+- 2\> arquivo
 
-- >arquivo 2>&1
+- \>arquivo 2\>&1
 
 **14. Escreva um único comando comando que gere a lista de arquivos e diretórios contidos em ~/LPI1/Exercicios/Network, exibindo-os na tela e  em um novo arquivo chamado lista-network.out**
 
