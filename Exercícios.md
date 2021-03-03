@@ -5,7 +5,7 @@
 1.0 - O caminho completo do arquivo .bash_history para o seu usuário;
 > $ echo $HISTFILE
 >
-> /home/LPI1/.bash_history
+> /home/user/.bash_history
 
 1.1 - O release do kernel instalado
 > $ uname -r
@@ -31,7 +31,7 @@
 > $ whereis tar
 >
 > tar: /usr/lib/tar /bin/tar /usr/include/tar.h /usr/share/man/man1/tar.1.gz
->
+
 > $ type tar
 >
 > tar é /bin/tar
@@ -43,6 +43,8 @@
 
 **3. Crie um comando que escreva na tela a seguinte frase: "O Conteúdo da Variável $NOME é: <Valor da Variável NOME>"**
 > $ echo "O Conteúdo da Variável \$NOME é: $NOME"
+>
+> O Conteúdo da Variável $NOME é: Pablo Juliano Santos
 
 ## 103.2 Aplicando Filtros a Textos e Arquivos
 
@@ -58,17 +60,17 @@ usuario:3:1000
 
 > $ tail -n 15 /etc/passwd | cut -d ":" -f 1,3 | sort -t":" -k2 -g
 
-- $ tail -n 15 --> Opção _-n_ mostra as 15 ultimas linhas do arquivo.
-- $ cut -d ":" -f 1,3 --> Opção _-d_ define o delimitador de campos e o _-f_ seleciona os campos a ser extraido do texto.
-- $ sort -t":" -k2 -g --> Opção _-t_ define o delimitador de campos, _-k_ seta qual campo sera usado de referencia para ordenar e o _-g_ define o tipo de ordenação nesse caso ordena com base em valores numéricos.
+- $ tail -n 15 		--> Opção _-n_ mostra as 15 ultimas linhas do arquivo.
+- $ cut -d ":" -f 1,3 	--> Opção _-d_ define o delimitador de campos e o _-f_ seleciona os campos a ser extraido do texto.
+- $ sort -t":" -k2 -g 	--> Opção _-t_ define o delimitador de campos, _-k_ seta qual campo sera usado de referencia para ordenar e o _-g_ define o tipo de ordenação nesse caso ordena com base em valores numéricos.
 
 
 **5. Gere um comando, ou sequência deles, que mostre o número de linhas do arquivo /etc/passwd excluindo-se as linhas que contenham a palavra  "daemon". O resultado do comando deve ser o número de linhas.**
 
 > $ sed '/daemon/d' /etc/passwd | wc -l
 
-- $ sed '/daemon/d' --> Exclui as linhas que contenham a palavra _daemon_.
-- $ wc -l --> _-l_ irá mostrar a quantidade de linhas no arquivo.
+- $ sed '/daemon/d' 	--> Exclui as linhas que contenham a palavra _daemon_.
+- $ wc -l 		--> _-l_ irá mostrar a quantidade de linhas no arquivo.
 
 
 ## 103.3 Gerenciamento Básico de Arquivos
@@ -92,11 +94,15 @@ usuario:3:1000
 > $ tar -zcvpf arquivos-cron.tgz /etc/*cron*
 
 **10. Descompacte conteúdo do arquivo arquivos-cron.tgz dentro do diretório \<HOME>/LPI1/Exercicios/Descompactar/** 
-
+> $ cd \~/LPI1/Exercicios/Descompactar/
+>
+> $ tar -xpvf arquivos-cron.tgz 
 
 **11. Encontre todos os arquivos do diretório /var, cujo nome termine com ".gz" e que foram modificados nas últimas 48 horas.**
 > $ find ./ -mtime -2 -name "*.gz" -ls 2>/dev/null
-> 
+
+- -mtime -2	--> Essa opção procura um arquivo/diretorio baseado no seu tempo de modificação. Para que um arquivo corresponda com a ocorrencia **-2** deverá ter seu conteudo modificado dentro das ultimas **48 horas**. No caso de procurar por arquivos modificados dentro das ultimas **24 horas**, usar a flag **0**
+
 
 ## 103.4 Fluxos, Pipes e Redirecionamentos
 
@@ -110,17 +116,22 @@ drwxr-xr-x 2 lightdm lightdm 4096 Mar 27 16:41 /var/lib/lightdm/.cache/fontconfi
 
 drwx------ 4 lightdm lightdm 4096 Mar 27 16:41 /var/lib/lightdm/.config
 
+> $ find /var/ -type d -name "*config*" 2> /dev/null | xargs ls -ld > diretorios-config.out
+
+
 **13. Explique as diferenças entre os seguintes redirecionadores de entradas e saídas**
 
 - \> arquivo
 
-- < arquivo 
+- <\ arquivo 
 
 - \>\> arquivo
 
 - 2\> arquivo
 
 - \>arquivo 2\>&1
+
+> Resposta desta alternativa se encontra dentro do tópico [103.4](https://github.com/JaySaints/LPIC-1-Notes/blob/main/103_4.md)
 
 **14. Escreva um único comando comando que gere a lista de arquivos e diretórios contidos em ~/LPI1/Exercicios/Network, exibindo-os na tela e  em um novo arquivo chamado lista-network.out**
 
