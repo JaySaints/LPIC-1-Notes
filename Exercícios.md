@@ -2,39 +2,39 @@
 
 **1. Encontre as seguintes informações sobre a sua instalação Linux:**
 
-	1.0 - O caminho completo do arquivo .bash_history para o seu usuário;
-	> $ echo $HISTFILE
-	>
-	> /home/LPI1/.bash_history
+1.0 - O caminho completo do arquivo .bash_history para o seu usuário;
+> $ echo $HISTFILE
+>
+> /home/LPI1/.bash_history
 
-	1.1 - O release do kernel instalado
-	> $ uname -r
-	>
-	> 4.9.0-14-amd64
+1.1 - O release do kernel instalado
+> $ uname -r
+>
+> 4.9.0-14-amd64
 
-	1.2 - Os diretórios incluídos em seu PATH
-	> $ echo $PATH
-	>
-	> /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/ordens/node-v12.19.0-linux-x64/bin
+1.2 - Os diretórios incluídos em seu PATH
+> $ echo $PATH
+>
+> /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/ordens/node-v12.19.0-linux-x64/bin
 
-	1.3 - O hostname da máquina
-	> $ hostname
-	>
-	> lpi1
+1.3 - O hostname da máquina
+> $ hostname
+>
+> lpi1
 
-	1.4 - O PID da sua sessão shell atual
-	> $ echo $$
-	>
-	> 3182
+1.4 - O PID da sua sessão shell atual
+> $ echo $$
+>
+> 3182
 
-	1.5 - A localização do comando tar
-	> $ whereis tar
-	>
-	> tar: /usr/lib/tar /bin/tar /usr/include/tar.h /usr/share/man/man1/tar.1.gz
-   	>
-   	> $ type tar
-   	>
-   	> tar é /bin/tar
+1.5 - A localização do comando tar
+> $ whereis tar
+>
+> tar: /usr/lib/tar /bin/tar /usr/include/tar.h /usr/share/man/man1/tar.1.gz
+>
+> $ type tar
+>
+> tar é /bin/tar
 
 **2. Crie e exporte uma variável chamada "NOME" que contenha o seu nome completo.**
 > $ export NOME="Pablo Juliano Santos" ; echo $NOME
