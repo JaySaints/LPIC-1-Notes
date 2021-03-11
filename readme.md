@@ -23,6 +23,7 @@
 |                                                                              |
 |                                                                              |
 +------------------------------------------------------------------------------+ 
+Programa usado: jp2a 1.0.8 - Converte aquivos JPEG em formato ASCII.
 ```     
 
 > Curso online Udemy Preparatório para Certificação Linux LPIC-1 - Atualizado V5  
