@@ -23,7 +23,7 @@
 |                                                                              |
 |                                                                              |
 +------------------------------------------------------------------------------+ 
-###### jp2a 1.0.8 - Converte aquivos JPEG em formato ASCII.
+> jp2a 1.0.8 - Converte aquivos JPEG em formato ASCII.
 ```     
 
 
