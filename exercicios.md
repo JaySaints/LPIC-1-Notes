@@ -153,13 +153,18 @@ drwx------ 4 lightdm lightdm 4096 Mar 27 16:41 /var/lib/lightdm/.config
 
 4. PID dos 3 processos que estão utilizando mais Memória:
 > $ top 
+>
 > M - Ordernar pelo processo que esta tendo maior consumo de memória.
+>
 > PID's = 1008 || 12619 || 12720
 
 5. PPID (Parent Process ID) dos 3 processos com maior tempo de Uso de CPU: 
 > $ top
+>
 > t - Ordena pelos processos que esta consumindo maior processamento.
+>
 > f - Permite adicionar outros campos.
+>
 > PPID = 12619 || 5958 || 999 
 
 **16. Crie um comando, que gere um arquivo chamado ~/LPI1/Exercicios/resultado-top.out, que contenha a saída do comando  top, atualizado a cada 10 segundos, sendo executado indefinidamente até  que o processo seja morto. O comando deve rodar em background.**
@@ -169,6 +174,8 @@ drwx------ 4 lightdm lightdm 4096 Mar 27 16:41 /var/lib/lightdm/.config
 > $ jobs -l <--> $ ps aux | grep "top -b -d 10"
 >
 > $ kill -s SIGKILL 18218 <--> $ kill -9 18218
+
+
 
 
 
