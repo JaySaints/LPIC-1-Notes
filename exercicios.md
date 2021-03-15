@@ -135,4 +135,42 @@ drwx------ 4 lightdm lightdm 4096 Mar 27 16:41 /var/lib/lightdm/.config
 
 **14. Escreva um único comando comando que gere a lista de arquivos e diretórios contidos em ~/LPI1/Exercicios/Network, exibindo-os na tela e  em um novo arquivo chamado lista-network.out**
 
+> $ ls -l Network/* | tee -a lista-network.out
+
+
+## 103.5 Criar, Monitorar e Encerrar Processos
+
+**15. Preencha as informações abaixo com os dados de sua instância Linux:**
+
+1. Total de Memória RAM utilizada (em MB):
+> $ free -mt
+
+2. Load Average (Média dos Últimos 5 minutos): 
+> $ uptime (Análisar o valor o segundo valor do Load Average)
+
+3. Quantidade de Processos em Execução: 
+> $ ps -aux | wc -l
+
+4. PID dos 3 processos que estão utilizando mais Memória:
+> $ top 
+> M - Ordernar pelo processo que esta tendo maior consumo de memória.
+> PID's = 1008 || 12619 || 12720
+
+5. PPID (Parent Process ID) dos 3 processos com maior tempo de Uso de CPU: 
+> $ top
+> t - Ordena pelos processos que esta consumindo maior processamento.
+> f - Permite adicionar outros campos.
+> PPID = 12619 || 5958 || 999 
+
+**16. Crie um comando, que gere um arquivo chamado ~/LPI1/Exercicios/resultado-top.out, que contenha a saída do comando  top, atualizado a cada 10 segundos, sendo executado indefinidamente até  que o processo seja morto. O comando deve rodar em background.**
+> $ top -b -d 10 > resultado-top.out &
+
+**17. Envie um sinal de SIGKILL para o processo iniciado no exercício 16.**
+> $ jobs -l <--> $ ps aux | grep "top -b -d 10"
+>
+> $ kill -s SIGKILL 18218 <--> $ kill -9 18218
+
+
+
+
 
